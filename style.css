@@ -49,7 +49,8 @@ body {
     overflow: hidden;
 }
 
-.calculator__display {
+#calculator__display,
+#history__value {
     background-color: var(--grey-900);
     color: var(--grey-050);
     width: 16.25rem;
@@ -68,7 +69,7 @@ body {
         "seven eight nine equal"
         "four five six equal"
         "one two three equal"
-        "zero decimal clear equal";
+        "zero decimal clear ce";
 }
 
 .calculator__keys>button {
@@ -136,11 +137,11 @@ body {
     background: var(--grey-100);
 }
 
-.number {
+[data-type="number"] {
     background: #fff;
 }
 
 .operator:active,
-.number:active {
+[data-type="number"]:active {
     background: var(--grey-200);
 }
